@@ -104,4 +104,12 @@ describe('CalculadoraComponent', () => {
 
     expect(component.result).toBeLessThanOrEqual(10);
   });
+
+  it('deve subtrair 2 numeros corretamente', () => {
+    component.num1 = 5;
+    component.num2 = 4;
+    component.subtrairValores();
+
+    expect(component.result).toBe(1);
+  });
 });
