@@ -112,4 +112,12 @@ describe('CalculadoraComponent', () => {
 
     expect(component.result).toBe(1);
   });
+
+  it('deve multiplicar 2 numeros corretamente', () => {
+    component.num1 = 10;
+    component.num2 = 5;
+    component.multiplicarValores();
+
+    expect(component.result).toBe(50);
+  });
 });
