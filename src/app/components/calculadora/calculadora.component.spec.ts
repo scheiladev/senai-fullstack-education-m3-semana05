@@ -120,4 +120,12 @@ describe('CalculadoraComponent', () => {
 
     expect(component.result).toBe(50);
   });
+
+  it('deve validar se o valor do resultado está correto após somar os valores', () => {
+    component.num1 = 5;
+    component.num2 = 8;
+    component.somarValores();
+
+    expect(component.result).toBe(13);
+  });
 });
